@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emily Grinshpun — CS & Product Management</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/icons/favicon.ico" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero">
+        <span class="brand-name">Emily Grinshpun</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <!-- <button id="navToggle" class="nav-toggle" aria-label="Open navigation"></button> -->
+        <ul class="nav-list" id="navList">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#beyond">Beyond the Code</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a class="btn-resume" href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1 class="hero-name">Emily Grinshpun</h1>
+          <p class="hero-tagline">Turning ideas into products people love</p>
+          <div class="hero-cta">
+            <a class="btn btn-olive" href="resume.html">View My Resume</a>
+            <a class="btn btn-pink" href="#projects">See My Projects</a>
+          </div>
+          <p class="hero-sub">Computer Science + Project Management @ Texas A&M</p>
+        </div>
+
+        <div class="hero-right">
+          <div class="profile-wrap">
+            <img class="profile-photo" src="assets/images/profile.jpg" alt="Photo of Emily" />
+            <div class="leaf-decor" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container">
+      <div class="about-card">
+        <h2>About Me</h2>
+        <p>
+          Hey I’m Emily! I'm a Computer Science student at Texas A&M with an emphasis in Project Management. I’m passionate about building technology that’s not only functional, but also intuitive and enjoyable to use. 
+          Through hackathons, teaching, and leadership roles, I’ve learned how to translate ideas into real products by listening to users, defining scope, and delivering results under pressure. Whether I’m designing a mental health app prototype, guiding students through coding challenges, or hiking a new trail, I bring curiosity, creativity, and collaboration to everything I do.
+        </p>
+
+        <ul class="fun-facts">
+          <li>🌊 Lifeguard and swim instructor</li>
+          <li>🖌️ UI/UX & Figma experience</li>
+          <li>🌍 English, Hebrew, Russian</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects container">
+      <h2>Featured Projects</h2>
+      <div class="project-grid" id="projectGrid">
+        <!-- Project cards are rendered by JS from projects-data.js -->
+      </div>
+    </section>
+
+    <!-- BEYOND THE CODE -->
+    <section id="beyond" class="beyond container">
+      <h2>Beyond the Code</h2>
+      <div class="panels">
+        <div class="panel">
+          <h3>Product & Design</h3>
+            <p>Created user flows and Figma prototypes, tested with peers, and cut onboarding steps to improve clarity. Strong focus on prioritizing features and measuring impact.</p>
+        </div>
+        <article class="panel">
+            <h3>Leadership</h3>
+             <p>Treasurer for a 200+ member org, hackathon team lead, and Youth Counselor with the Israeli Scouts, roles that built skills in planning, facilitation, and stakeholder communication.</p>
+        </article>
+
+        <div class="panel">
+          <h3>Teaching & Mentorship</h3>
+          <p>Undergraduate TA experience, office hours, and helping students build confidence with debugging and algorithms.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREER INTERESTS
+    <section id="interests" class="interests container">
+      <h2>Career Interests</h2>
+      <div class="interest-row">
+        <div class="interest">Product Manager</div>
+        <div class="interest">Data Scientist</div>
+        <div class="interest">Cybersecurity Analyst</div>
+      </div>
+    </section> -->
+
+    <!-- GALLERY -->
+<section id="gallery" class="gallery container">
+  <h2>Personal Passions</h2>
+
+  <div class="gallery-grid">
+    <!-- left: tall image spans 2 rows -->
+    <img src="assets/images/hiking.jpg" alt="Hiking with friends" class="tall-left" />
+
+    <!-- middle: skydiving on top, description under it -->
+    <div class="second-col">
+      <img src="assets/images/skydiving.jpg" alt="Skydiving" />
+      <div class="gallery-desc-box">
+        <p>
+          For fun, I enjoy traveling, skiing, swimming, cooking, hiking with friends, and reading.
+          I also value cultural connections and love speaking Hebrew and Russian.
+          I am always looking to meet new people with unique experiences and adventures, so if you would like to chat or grab a coffee, I would love to connect!
+        </p>
+      </div>
+    </div>
+
+    <!-- right: tall image spans 2 rows -->
+    <img src="assets/images/skiing.jpg" alt="Skiing" class="tall-right" />
+  </div>
+</section>
+
+
+
+
+    <!-- CONTACT -->
+<section id="contact" class="contact container">
+  <h2>Contact</h2>
+  <!-- <p>If you'd like to connect, here are the best ways to reach me:</p> -->
+
+  <div class="contact-cards">
+    <div class="contact-item">
+      📧 <a href="mailto:emily6g@gmail.com">emily6g@gmail.com</a>
+    </div>
+    <div class="contact-item">
+      💼 <a href="https://www.linkedin.com/in/emily-grinshpun" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="contact-item">
+      💻 <a href="https://github.com/emily6g" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <div class="contact-item">
+      📱 <a href="tel:+12147557040">(214) 755-7040</a>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Emily Grinshpun, Computer Science, Texas A&M</p>
+    </div>
+  </footer>
+
+  <!-- Data and behavior -->
+  <script src="js/project-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume — Emily Grinshpun</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Same Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-name" href="index.html">Emily Grinshpun</a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#beyond">Beyond the Code</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a class="btn-resume" href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Resume Section -->
+  <main class="container" style="padding: 60px 0;">
+    <h1 style="text-align:center; font-family:'Playfair Display', serif; color:var(--maroon); margin-bottom: 30px;">
+      My Resume
+    </h1>
+
+    <div class="resume-wrapper">
+      <!-- Resume Embed -->
+      <div class="resume-frame">
+        <embed src="resume/Emily_Grinshpun_Resume.pdf" type="application/pdf" />
+      </div>
+
+      <!-- Download Button -->
+      <div style="text-align:center; margin-top:20px;">
+        <a class="btn btn-olive" href="resume/Emily_Grinshpun_Resume.pdf" download>
+          ⬇ Download Resume
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Same Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Emily Grinshpun</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
