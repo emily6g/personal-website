@@ -103,4 +103,49 @@ const PROJECTS = {
     </div>
   `
 },
+  americanAirlinesCS: {
+    id: "americanAirlinesCS",
+    title: "American Airlines Customer Service Solution",
+    description:
+      "A customer service solution concept for American Airlines that unifies disruption management, real time notifications, and tiered support for loyalty members, designed to reduce rebooking time and improve overall passenger satisfaction.",
+    thumb: "assets/images/americanairlineslogo.jpg",
+    liveUrl:
+      "https://www.canva.com/design/DAG46164zng/xRo2F8UkisOY6hux89gWgg/view?utm_content=DAG46164zng&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc7600a38af#1",
+    caseStudyHtml: `
+      <div class="cs-block">
+        <h4>Problem</h4>
+        <p>Passengers often receive delayed or inconsistent updates during travel disruptions, and they have to navigate separate tools for rebooking, vouchers, and compensation. Loyalty members do not see clear priority in service, which leads to confusion, longer rebooking times, and higher complaint volume.</p>
+      </div>
+
+      <div class="cs-block">
+        <h4>Users</h4>
+        <p>The core users are general passengers who expect clear, timely updates and simple self service options, AAdvantage loyalty members who expect prioritized and transparent support, and support agents who need a centralized workspace to handle disruptions efficiently.</p>
+      </div>
+
+      <div class="cs-block">
+        <h4>Solution</h4>
+        <p>The American Airlines Customer Service Solution combines three key components. First, a smart notification system that delivers real time alerts for delays, gate changes, and cancellations, each with clear next steps and the ability to share flight status with friends or family. Second, a unified disruption management portal that brings rebooking, refunds, and vouchers into one place for both passengers and agents. Third, a tiered support experience that highlights loyalty status, offers priority chat or phone support, and keeps a consistent, accessible interface across mobile, web, and internal tools.</p>
+      </div>
+
+      <div class="cs-block">
+        <h4>Experiment Plan</h4>
+        <p>The rollout follows three phases. Phase 1 pilots the experience on select domestic routes, measuring clarity of notifications, adoption of the portal, NPS, and rebooking time. Phase 2 expands to all routes and refines messaging rules and automation based on pilot feedback. Phase 3 introduces predictive alerts such as early warnings of possible delays and deeper personalization based on loyalty tier and engagement.</p>
+      </div>
+
+      <div class="cs-block">
+        <h4>Metrics</h4>
+        <p>Success is defined by measurable impact on operations and customer experience. Key goals include a 20% reduction in disruption related complaints, 99% notification accuracy from system audits, a 30% reduction in average rebooking time through portal analytics, and CSAT scores of 90% or higher on post interaction surveys.</p>
+      </div>
+
+      <div class="cs-block">
+        <h4>Timeline</h4>
+        <p>The project roadmap spans discovery through global rollout. Discovery focuses on stakeholder alignment and UX research by October 30, 2025. Design delivers notification flows and disruption portal wireframes by November 15, 2025. Core development targets January 15, 2026, followed by QA and user acceptance testing by February 15, 2026. The first public launch for domestic routes is planned for March 1, 2026, with global expansion in May 2026.</p>
+      </div>
+
+      <div class="cs-block">
+        <h4>My Role</h4>
+        <p>I created the product requirements document, defined the problem and success metrics, and outlined the phased experiment plan. I also designed Figma flows for the notification system and disruption portal, focusing on consistent UX across mobile and web, and on clear prioritization for loyalty members. This project strengthened my ability to connect user pain points to metrics, craft a realistic rollout strategy, and communicate a product vision through both a PRD and interactive presentation.</p>
+      </div>
+    `
+  },
 };
