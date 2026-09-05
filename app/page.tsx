@@ -22,7 +22,7 @@ export default function Home() {
           </div>
           <div className="home-portrait reveal">
             <div className="portrait-orbit orbit-one" aria-hidden="true" /><div className="portrait-orbit orbit-two" aria-hidden="true" />
-            <div className="portrait-frame"><img src="https://raw.githubusercontent.com/emily6g/personal-website/main/assets/images/profile3.jpg" alt="Emily Grinshpun" /></div>
+            <div className="portrait-frame"><img src="app/images/profile3.jpg" alt="Emily Grinshpun" /></div>
             <span className="portrait-note note-one">based in Texas</span><span className="portrait-note note-two">building with intention</span>
           </div>
         </div>
