@@ -1,6 +1,7 @@
 import SiteHeader from "../SiteHeader";
+import { BASE_PATH } from "../site-config";
 
-const resumeUrl = "/Grinshpun_Emily_Resume.pdf";
+const resumeUrl = `${BASE_PATH}/Grinshpun_Emily_Resume.pdf`;
 
 export default function ResumePage() {
   return <main className="resume-page">

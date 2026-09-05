@@ -1,4 +1,6 @@
+import Link from "next/link";
 import SiteHeader from "../SiteHeader";
+import { BASE_PATH } from "../site-config";
 
 const allProjects = [
   { number:"01", title:"Amazon Rufus", kind:"Product Improvement", categoryTone:"improvement", summary:"Redesigned Amazon's shopping assistant around discovery, guided decisions, comparisons, and cart-ready outcomes.", proof:"Honorable Mention · Product@TAMU", highlight:true, href:"/work/rufus", tone:"project-rufus", visual:"/projects/rufus.png", visualKind:"logo" },
@@ -14,14 +16,14 @@ export default function ProjectsPage() {
     <SiteHeader />
     <section className="archive-hero"><p className="eyebrow">Project archive · 2024–2026</p><h1>All projects.</h1><p>Six product stories across AI, healthcare, service design, and playful builds.</p></section>
     <section className="archive-grid">
-      {allProjects.map((project) => <a className={`archive-card ${project.tone}`} href={project.href} key={project.title}>
+      {allProjects.map((project) => <Link className={`archive-card ${project.tone}`} href={project.href} key={project.title}>
         <div className="archive-meta"><span>{project.number}</span><span className={`archive-category archive-category-${project.categoryTone}`}>{project.kind}</span></div>
-        <div className={`archive-visual ${project.visualKind}`}><img src={project.visual} alt={`${project.title} project visual`} /></div>
+        <div className={`archive-visual ${project.visualKind}`}><img src={`${BASE_PATH}${project.visual}`} alt={`${project.title} project visual`} /></div>
         <h2>{project.title}</h2>
         <div className={`archive-key-detail ${project.highlight ? "archive-key-detail-highlight" : ""}`}><small>{project.highlight ? "Recognition" : "Project detail"}</small><strong>{project.proof}</strong></div>
         <p>{project.summary}</p><div className="archive-proof"><span>View case study</span><i aria-hidden="true">↗</i></div>
-      </a>)}
+      </Link>)}
     </section>
-    <a className="next-project archive-home" href="/"><span>Return to portfolio</span><strong>Back home</strong><i aria-hidden="true">→</i></a>
+    <Link className="next-project archive-home" href="/"><span>Return to portfolio</span><strong>Back home</strong><i aria-hidden="true">→</i></Link>
   </main>;
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SiteHeader from "../SiteHeader";
 
 type CaseFact = { value: string; label: string };
@@ -32,7 +33,7 @@ export default function CaseStudy(props: CaseStudyProps) {
       <SiteHeader />
 
       <section className="case-hero">
-        <a className="case-back-link" href="/projects"><span aria-hidden="true">←</span> All projects</a>
+        <Link className="case-back-link" href="/projects"><span aria-hidden="true">←</span> All projects</Link>
         <div className="case-kicker">
           <p className="eyebrow">Project {props.number} / 06 · {props.label}</p>
           <span className={`case-category case-category-${categoryTone}`}>{props.category}</span>
@@ -46,7 +47,7 @@ export default function CaseStudy(props: CaseStudyProps) {
 
       <div className="case-layout">
         <aside className="case-sidebar">
-          <a className="case-sidebar-back" href="/projects"><span aria-hidden="true">←</span> All projects</a>
+          <Link className="case-sidebar-back" href="/projects"><span aria-hidden="true">←</span> All projects</Link>
           <p className={`case-sidebar-category case-category-${categoryTone}`}>{props.category}</p>
           <nav aria-label="Case study sections">
             {props.sections.map((section, index) => (
@@ -73,8 +74,8 @@ export default function CaseStudy(props: CaseStudyProps) {
       </div>
 
       <nav className="case-footer-nav" aria-label="Project navigation">
-        <a href="/projects"><span className="case-footer-arrow" aria-hidden="true">←</span><span className="case-footer-copy"><small>Return to</small><strong>All projects</strong></span></a>
-        <a href={props.nextHref}><span className="case-footer-copy"><small>Next project</small><strong>{props.nextTitle}</strong></span><span className="case-footer-arrow" aria-hidden="true">→</span></a>
+        <Link href="/projects"><span className="case-footer-arrow" aria-hidden="true">←</span><span className="case-footer-copy"><small>Return to</small><strong>All projects</strong></span></Link>
+        <Link href={props.nextHref}><span className="case-footer-copy"><small>Next project</small><strong>{props.nextTitle}</strong></span><span className="case-footer-arrow" aria-hidden="true">→</span></Link>
       </nav>
     </main>
   );
