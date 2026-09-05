@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SiteHeader from "../SiteHeader";
 import TravelGlobe from "./TravelGlobe";
 
@@ -11,7 +12,7 @@ export default function TravelPage() {
         <p>A growing map of the places and adventures that have shaped my perspective.</p>
       </section>
       <TravelGlobe />
-      <a className="next-project" href="/#about"><span>Back to portfolio</span><strong>Outside of work</strong><i aria-hidden="true">→</i></a>
+      <Link className="next-project" href="/#about"><span>Back to portfolio</span><strong>Outside of work</strong><i aria-hidden="true">→</i></Link>
     </main>
   );
 }

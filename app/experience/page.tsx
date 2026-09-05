@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SiteHeader from "../SiteHeader";
 
 const roles = [
@@ -71,10 +72,10 @@ export default function ExperiencePage() {
           </article>
         ))}
       </section>
-      <a className="experience-resume-cta" href="/resume">
+      <Link className="experience-resume-cta" href="/resume">
         <span>View complete resume</span>
         <span aria-hidden="true">→</span>
-      </a>
+      </Link>
     </main>
   );
 }

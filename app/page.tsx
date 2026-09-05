@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SiteHeader from "./SiteHeader";
 
 const projects = [
@@ -17,7 +18,7 @@ export default function Home() {
           <div className="home-hero-copy reveal">
             <h1><span className="home-hero-title-line">Technical Product Manager</span><span className="home-hero-title-accent">CS Student</span></h1>
             <p className="home-hero-statement">I turn complex problems into products people love.</p>
-            <a className="home-hero-cta" href="/projects">View my case studies <span aria-hidden="true">→</span></a>
+            <Link className="home-hero-cta" href="/projects">View my case studies <span aria-hidden="true">→</span></Link>
           </div>
           <div className="home-portrait reveal">
             <div className="portrait-orbit orbit-one" aria-hidden="true" /><div className="portrait-orbit orbit-two" aria-hidden="true" />
@@ -40,22 +41,22 @@ export default function Home() {
           <p className="featured-experience-copy">Stepping into product management showed me how much happens before building: finding the right problem, validating it with evidence, and returning to what users actually said.</p>
           <div className="featured-experience-actions">
             <a href="https://lnkd.in/p/gTeyAKTn" target="_blank" rel="noreferrer">Read my internship takeaways <span aria-hidden="true">↗</span></a>
-            <a href="/experience">View more experience <span aria-hidden="true">→</span></a>
+            <Link href="/experience">View more experience <span aria-hidden="true">→</span></Link>
           </div>
         </article>
       </section>
 
       <section className="selected-work" id="work">
         <div className="section-heading compact-section-heading"><p className="eyebrow">Case studies</p></div>
-        <div className="project-stack">{projects.map((project) => <a href={project.href} className={`project-panel ${project.color}`} key={project.title}><div className="project-meta"><span>{project.index}</span><span>View case</span></div><div className="project-content"><h3>{project.kind}</h3><h4>{project.title}</h4><p className="project-proof">{project.proof}</p></div><span className="project-arrow" aria-hidden="true">↗</span></a>)}</div>
-        <a className="all-work-link" href="/projects"><span>Explore every project</span><i aria-hidden="true">→</i></a>
+        <div className="project-stack">{projects.map((project) => <Link href={project.href} className={`project-panel ${project.color}`} key={project.title}><div className="project-meta"><span>{project.index}</span><span>View case</span></div><div className="project-content"><h3>{project.kind}</h3><h4>{project.title}</h4><p className="project-proof">{project.proof}</p></div><span className="project-arrow" aria-hidden="true">↗</span></Link>)}</div>
+        <Link className="all-work-link" href="/projects"><span>Explore every project</span><i aria-hidden="true">→</i></Link>
       </section>
 
       <section className="about-preview" id="about">
         <div className="about-simple reveal">
           <p className="eyebrow">Outside of work</p>
           <div className="about-personal-content">
-            <p className="about-personal-copy">For fun, I enjoy <a href="/travel">traveling</a>, skiing, swimming, cooking, hiking with friends, and reading. I also value cultural connections and love speaking Hebrew and Russian. I am always looking to meet new people with unique experiences and adventures, so if you would like to chat or grab a coffee, I would love to connect!</p>
+            <p className="about-personal-copy">For fun, I enjoy <Link href="/travel">traveling</Link>, skiing, swimming, cooking, hiking with friends, and reading. I also value cultural connections and love speaking Hebrew and Russian. I am always looking to meet new people with unique experiences and adventures, so if you would like to chat or grab a coffee, I would love to connect!</p>
             <div className="social-icons" aria-label="Connect with Emily">
               <a href="mailto:emily6g@gmail.com" aria-label="Email Emily" title="Email">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2" /><path d="m3.5 7 8.5 6 8.5-6" /></svg>
