@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SiteHeader from "./SiteHeader";
+import { BASE_PATH } from "./site-config";
 
 const projects = [
   { index: "01", kind: "Product Improvement", title: "Amazon Rufus", proof: "Product@TAMU · Honorable Mention", color: "project-rufus", href: "/work/rufus" },
@@ -22,7 +23,7 @@ export default function Home() {
           </div>
           <div className="home-portrait reveal">
             <div className="portrait-orbit orbit-one" aria-hidden="true" /><div className="portrait-orbit orbit-two" aria-hidden="true" />
-            <div className="portrait-frame"><img src="app/images/profile3.jpg" alt="Emily Grinshpun" /></div>
+            <div className="portrait-frame"><img src={`${BASE_PATH}/profile3.jpg`} alt="Emily Grinshpun" /></div>
             <span className="portrait-note note-one">based in Texas</span><span className="portrait-note note-two">building with intention</span>
           </div>
         </div>
